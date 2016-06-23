@@ -1,0 +1,21 @@
+<ion-view title="Post Form" id="page9" class=" ">
+    <ion-content padding="true" class="has-header">
+        <form id="postForm-form3" class="list ">
+            <label class="item item-input " id="postForm-input6">
+                <span class="input-label">Title</span>
+                <input type="text" placeholder="" ng-model="post.title">
+            </label>
+            <label class="item item-input " id="postForm-textarea1">
+                <span class="input-label">Content</span><textarea placeholder="" ng-model="post.desc"></textarea>
+            </label>
+        </form>
+        <div class="">
+            <img width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;" ng-src="{{ post.pic || 'img/myJ92Wd7Qtay0aGdviNi_android.jpg' }} ">
+        </div>
+        <div id="postForm-button-bar1" class=" button-bar ">
+            <button id="postForm-button6" class=" button button-positive  button-block icon-left ion-camera" ng-click="takePicture()">Camera</button>
+            <button id="postForm-button7" class=" button button-positive  button-block icon-left ion-images" ng-click="getPicture()">Gallery</button>
+        </div>
+        <a id="postForm-button4" class=" button button-positive  button-block " ng-click="postAdd(post)">Create</a>
+    </ion-content>
+</ion-view>
